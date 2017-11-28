@@ -63,7 +63,7 @@ action :install do
 end
 
 action_class do
-  include 'PostgresqlCookbook::Helpers'
+  include PostgresqlCookbook::Helpers
 
   def initialized
     true if ::File.exist?("#{data_dir}/initialized.txt")

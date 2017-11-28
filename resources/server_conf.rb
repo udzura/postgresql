@@ -1,4 +1,3 @@
-
 property :version, String, default: '9.6'
 property :change_notify, Symbol, default: :restart
 property :hba_file, String, default: lazy { "#{data_dir}/pg_hba.conf" }
@@ -17,5 +16,5 @@ action :modify do
 end
 
 action_class do
-  include 'PostgresqlCookbook::Helpers'
+  include PostgresqlCookbook::Helpers
 end
